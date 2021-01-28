@@ -1,0 +1,10 @@
+local invoke:
+
+Install sam-cli
+Install Docker
+Install Java11
+Install gradle
+
+sam build
+sam local invoke HelloWorldFunction --event events/event.json
+sam local start-api

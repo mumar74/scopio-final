@@ -1,0 +1,37 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "cloudformation.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}
+
+=========================
+
+{
+  "Role": {
+      "Path": "/",
+      "RoleName": "cf-role",
+      "RoleId": "AROATTOHBRFYWFWBH52FC",
+      "Arn": "arn:aws:iam::247914924401:role/cf-role",
+      "CreateDate": "2021-01-28T06:32:24+00:00",
+      "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+              {
+                  "Action": "sts:AssumeRole"
+              }
+          ]
+      },
+      "PermissionsBoundary": {
+          "PermissionsBoundaryType": "Policy",
+          "PermissionsBoundaryArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      }
+  }
+}
