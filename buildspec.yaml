@@ -10,7 +10,7 @@ phases:
       #https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html
       # Package SAM template1
       - sam package --template-file template.yaml --s3-bucket ${PACKAGE_BUCKET} --output-template-file packaged.yaml
-      # Deploy packaged SAM template1
+      # Deploy packaged SAM template
       #- sam deploy --template-file packaged.yaml --stack-name test --capabilities CAPABILITY_IAM  
 artifacts:
   files:
